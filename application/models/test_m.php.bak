@@ -1,0 +1,29 @@
+<?php
+class Test_m extends CI_Model
+{
+	function __construct()
+	{
+		parent:: __construct();
+		$this->load->database();	
+	}
+	function user_insert($arr)
+	{
+		$this->db->insert('test',$$arr);	
+	}
+	
+	function user_update($if,$arr)
+	{
+		$this->db->where('uid',$id);
+		$this->
+		}
+	
+	function user_select($uname)
+	{
+		$this->db->where('uname',$uname);
+		$this->db->select('*');
+		$query=$this->db->get('user');
+		return $query->result();		
+	}
+}
+
+?>
